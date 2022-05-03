@@ -36,3 +36,7 @@ app.use(express.static("public"));
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
+
+//TODO: Choose a room & then storing the messages on backend in a room
+//TODO: Authenticated chat (registration/login)
+//TODO: Thinking about how you can make it scalable (choosing API Gateway + WebSocket + Redis/ElastiCache for manging all the temp state + using dynamodb or mongoDb mysql, for managing full permanent state)
